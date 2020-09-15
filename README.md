@@ -1,7 +1,10 @@
 # nyc_census_webmap
-This online map allows users to find their neighborhood's 2010 Census participation and sign up to volunteer in advance of the 2020 Census. The decennial census determines apportionment of congressional seats, allocation of billions in federal funding, and guides the decisions of public health, planning, and transportation officials. Unfortunately, both the current political climate and generations of misrule have made many distrust the census. Reasons for refusing to answer range from fear the information will be shared with immigration officials to sheer cynicism about the effectiveness of the government. For these two reasons-- distrust of the government and the importance of the census for local communities-- our program focused on community organizing at the neighborhood level, incorporating both volunteers and local service providers.
+This online map allows users to find their neighborhood's 2010 Census participation and sign up to volunteer in advance of the 2020 Census.
+The decennial census determines apportionment of congressional seats, allocation of billions in federal funding, and guides the decisions of public health, planning, and transportation officials.
+Our office, NYC Census 2020, was created to encourage census participation among New Yorkers, in addition to outreach performed by the federal Census Bureau.
+Unfortunately, both the current political climate and generations of bad experiences with the government have made many distrust the census. Reasons for refusing to answer range from fear the information will be shared with immigration officials to sheer cynicism about the effectiveness of the government. For these two reasons-- distrust of the government and the importance of the census for local communities-- our program focused on community organizing at the neighborhood level, incorporating both volunteers and local service providers.
 
-Unfortunately we experienced technical problems setting up Git on our city-issued laptops, and so the revision history of this app is lost. 
+In the course of creating this app I experienced technical problems setting up Git on my city-issued laptop, and so the revision history of this app is lost. 
 
 This app has been expanded at various points to add additional functionality-- for instance, I created a version for the launch of our field program which directed users to the 5 "Census Teach Ins" closest to the address they searched. That version will be uploaded as a branch once I create a "dummy" JSON of sample events.
 

@@ -1,0 +1,244 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.surface,
+.leaflet-touch .leaflet-bar {
+  border: none;
+  border-radius: 8px;
+  border-bottom: 1px solid #DADCE0;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2), 0 -1px 0px rgba(0,0,0,0.02);
+  background-color: #ffffff;
+}
+
+.leaflet-touch .leaflet-bar a:first-child {
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.leaflet-touch .leaflet-bar a:last-child {
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.label {
+  font-size: 0.8em;
+  flex: 1;
+}
+
+body,
+input,
+p,
+.tab {
+  font-family: 'Open Sans','Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+#legendTitle {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 12px;
+  margin: 2px;
+  padding: 1px;
+}
+
+html,
+body,
+#mapid {
+  height: 100%;
+  width: 100vw;
+}
+
+button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bar {
+  position: fixed;
+  z-index: 2000;
+  display: flex;
+  justify-content: space-between;
+}
+
+#searchbar {
+  top: 10px;
+  display: flex;
+  left: 10px;
+  flex-direction: column;
+  /*align-items: stretch;*/
+  width: 350px;
+}
+
+#searchWrapper {
+  display: flex;
+  margin: 8px 0px 8px 8px;
+  border: none;
+  height: 26px;
+  flex: 1;
+}
+
+#searchBarTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#searchX {
+  margin-left: 7px;
+}
+
+#searchX:before {
+  content: '';
+  border-left: 1px solid lightgray;
+  position: relative;
+  left: -8px;
+  height: 25px;
+}
+
+#submit,
+#infoX,
+#searchX {
+  border: none;
+  height: 26px;
+  width: 26px;
+  background-color: white;
+  margin: 8px;
+}
+
+#address {
+  border: none;
+  flex: auto;
+  margin-left: 0.5em;
+  background-color: white;
+}
+
+#infobar {
+  left: 10px;
+  bottom: 10px;
+  flex-direction: column;
+  width: 260px;
+}
+
+i,
+.leaflet-bar a {
+  color: rgba(0, 0, 0, 0.54);
+}
+
+.leaflet-top {
+  top: 54px;
+}
+
+.colorBox {
+  width: 18px;
+  height: 18px;
+  margin-right: 7px;
+  opacity: 1;
+  flex: initial;
+  border-radius: 2px;
+}
+
+#legend {
+  flex: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+}
+
+.labelBox {
+  font-size: 0.85em;
+  padding: 1px;
+  margin: 2px;
+  display: flex;
+  align-items: center;
+  height: 20px;
+}
+
+#infobarTop {
+  display: flex;
+  justify-content: space-between;
+}
+
+.tabBar {
+  padding: 3px;
+  display: flex;
+  flex: 1;
+  justify-content: space-around;
+}
+
+#formJoin {
+  display: flex;
+}
+
+#getInvolved {
+  flex: auto;
+}
+
+.tab {
+  border: none;
+  background: white;
+  color: #999999;
+  font-weight: bold;
+  padding: 2px;
+}
+
+.activeTab {
+  color: #595959;
+  border-bottom: 2px solid #595959;
+}
+
+#addressData {
+  /*background: hsl(0, 0%, 97%);*/
+  display: none;
+  z-index: 2001;
+  bottom: 0px;
+  padding: 0.3em;
+  flex: auto;
+  flex-direction: column;
+}
+
+.addressInfoHeader {
+	padding: 2px;
+	flex: initial;
+	margin-left: 8px;
+  margin-top: 8px;
+	font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.addressInfo {
+  padding: 2px;
+  flex: initial;
+  margin-left: 8px;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.addressInfoItem {
+  font-size: 12px;
+}
+
+@media only screen and (max-width: 560px) {
+  #infobar,
+  .leaflet-info-control {
+    bottom: 26px;
+  }
+}
+
+@media only screen and (max-width: 370px) {
+  #searchbar,
+  #infobar {
+    width: calc(100% - 20px);
+  }
+  .leaflet-control-zoom {
+    display: none;
+  }
+}
+@media only screen and (max-width: 287px) {
+  #infobar,
+  .leaflet-info-control {
+    bottom: 42px;
+  }
+}
